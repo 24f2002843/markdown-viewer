@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--header-bg, #f8f9fa);
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#markdown-tabs {
+    display: flex;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#markdown-tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#markdown-tabs button[aria-selected="true"] {
+    background-color: #007bff;
+    color: white;
+}
+
+#markdown-preview, #markdown-source {
+    display: none;
+}
+
+#markdown-source {
+    display: block;
+}
+
+#preview-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
